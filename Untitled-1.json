@@ -1,0 +1,160 @@
+https:
+//www.mrdappointments.gov.nl.ca
+/qmaticwebbooking
+/rest
+/schedule
+/branches
+/0530213b59d05514353e5567e29db9c9f2393c85c284456cfd410162fd44fa8d
+/dates;
+    servicePublicId=378dcad3a2874a41a1018cb96d57a21c63912e1884dead32d94d14b244abe8ae;
+    customSlotLength=30
+
+https://www.mrdappointments.gov.nl.ca
+/qmaticwebbooking
+/rest
+/schedule
+/branches
+/0530213b59d05514353e5567e29db9c9f2393c85c284456cfd410162fd44fa8d
+/dates;
+    servicePublicId=13eb933d94be04d7fe2bd1f80e433a8e38c0e01eb36e4b86edc5ce27545cf9ec;
+    customSlotLength=30
+res:
+[{"date":"2023-10-10"},{"date":"2023-10-11"},{"date":"2023-10-12"},{"date":"2023-10-13"},{"date":"2023-10-16"},{"date":"2023-10-17"},{"date":"2023-10-18"},{"date":"2023-10-19"},{"date":"2023-10-20"},{"date":"2023-10-23"},{"date":"2023-10-24"},{"date":"2023-10-25"},{"date":"2023-10-26"},{"date":"2023-10-27"},{"date":"2023-10-30"}]
+
+https://www.mrdappointments.gov.nl.ca
+/qmaticwebbooking
+/rest
+/schedule
+/appointments
+/checkMultiple;
+    phone=17092192715;
+    email=mhakcanada@gmail.com;
+    firstName=Abdullhak;
+    lastName=Mohammed;
+    branchPublicId=0530213b59d05514353e5567e29db9c9f2393c85c284456cfd410162fd44fa8d;
+    servicePublicId=13eb933d94be04d7fe2bd1f80e433a8e38c0e01eb36e4b86edc5ce27545cf9ec;
+    date=2023-10-30;
+    time=09:30
+res:
+    {"message":"MULTIPLE_OK"}
+
+https://www.mrdappointments.gov.nl.ca/qmaticwebbooking/rest/schedule/matchCustomer
+POST: Payload:
+{
+    "email": "m.hakcanada@gmail.com",
+    "phone": "17092192715",
+    "firstName": "Abdullhak",
+    "lastName": "Moh",
+    "dateOfBirth": "",
+    "externalId": "",
+    "addressLine1": "",
+    "addressLine2": "",
+    "addressCity": "",
+    "addressZip": "",
+    "addressState": "",
+    "addressCountry": "",
+    "custom": "{}"
+}
+res:
+{
+  "allowOverwrite": false
+}
+
+
+CONFIRM:
+https://www.mrdappointments.gov.nl.ca/qmaticwebbooking/rest/schedule/appointments/bd1afc1b6c8127b7e5eddda12f575f2a4b87a3b51872b280902c4e309ff4f7b2/confirm
+POST, PAYLOAD:
+{
+    "customer": {
+        "firstName": "Abdullhak",
+        "lastName": "Moh",
+        "dateOfBirth": "",
+        "email": "m.hakcanada@gmail.com",
+        "phone": "17092192715",
+        "dob": "",
+        "custom": "{}",
+        "externalId": "",
+        "addressLine1": "",
+        "addressLine2": "",
+        "addressCity": "",
+        "addressZip": "",
+        "addressState": "",
+        "addressCountry": ""
+    },
+    "languageCode": "en",
+    "countryCode": "us",
+    "notificationType": "both",
+    "captcha": "",
+    "custom": "{\"peopleServices\":[{\"publicId\":\"13eb933d94be04d7fe2bd1f80e433a8e38c0e01eb36e4b86edc5ce27545cf9ec\",\"qpId\":\"52\",\"adult\":1,\"name\":\"Written Exam - Motorcycle (Class 06)\",\"child\":0}],\"totalCost\":0,\"createdByUser\":\"Qmatic Web Booking\",\"paymentRef\":\"\",\"customSlotLength\":30}",
+    "notes": "",
+    "title": "Qmatic Web Booking"
+}
+res:
+{
+    "allday": false,
+    "appId": "qmaticwebbooking",
+    "blocking": false,
+    "branch": {
+        "addressCity": "Harbour Grace NL",
+        "addressLine1": "7-9 Roddick Crescent",
+        "addressLine2": "P.O. Box 512",
+        "addressZip": "A0A 2M0",
+        "custom": "{\"names\":{\"en\":\"Harbour Grace MRD\"}}",
+        "id": "0530213b59d05514353e5567e29db9c9f2393c85c284456cfd410162fd44fa8d",
+        "internalId": 7,
+        "name": "Harbour Grace MRD",
+        "qpId": "5",
+        "timeZone": "America/St_Johns"
+    },
+    "branchName": "Harbour Grace MRD",
+    "created": 1696808515654,
+    "customSlotLength": 30,
+    "customer": {
+        "addressCity": "",
+        "addressCountry": "",
+        "addressLine1": "",
+        "addressLine2": "",
+        "addressState": "",
+        "addressZip": "",
+        "allowOverwrite": false,
+        "custom": "{}",
+        "email": "m.hakcanada@gmail.com",
+        "externalId": "",
+        "firstName": "Abdullhak",
+        "id": 940529,
+        "lastName": "Moh",
+        "phone": "17092192715"
+    },
+    "date": "2023-10-30",
+    "duration": 30,
+    "errorMessage": "",
+    "externalId": "5155460930",
+    "languageCode": "en",
+    "notes": "",
+    "notificationType": "both",
+    "peopleServices": [
+        {
+            "name": "Written Exam - Motorcycle (Class 06)",
+            "adult": 1,
+            "publicId": "13eb933d94be04d7fe2bd1f80e433a8e38c0e01eb36e4b86edc5ce27545cf9ec",
+            "qpId": "52",
+            "child": 0
+        }
+    ],
+    "publicBranchId": "0530213b59d05514353e5567e29db9c9f2393c85c284456cfd410162fd44fa8d",
+    "publicId": "bd1afc1b6c8127b7e5eddda12f575f2a4b87a3b51872b280902c4e309ff4f7b2",
+    "publicServiceId": "13eb933d94be04d7fe2bd1f80e433a8e38c0e01eb36e4b86edc5ce27545cf9ec",
+    "qrConciergeId": "{\"appointment_id\":\"515546\",\"branch_name\":\"Harbour Grace MRD\",\"branch_id\":\"7\",\"appointment_date\":\"2023-10-30T09:30:00\"}",
+    "serviceName": "Written Exam - Motorcycle (Class 06)",
+    "services": [
+        {
+            "name": "Written Exam - Motorcycle (Class 06)",
+            "publicId": "13eb933d94be04d7fe2bd1f80e433a8e38c0e01eb36e4b86edc5ce27545cf9ec"
+        }
+    ],
+    "startTime": "2023-10-30T12:00:00.000+0000",
+    "status": 20,
+    "time": "09:30",
+    "title": "Qmatic Web Booking",
+    "totalCost": 0
+}
